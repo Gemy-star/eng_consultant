@@ -1,0 +1,15 @@
+{% load static %}
+<div id="loftloader-wrapper" class="pl-imgloading" data-show-close-time="15000" data-max-load-time="0">
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+  <div class="loader-inner">
+    <div id="loader">
+      <div class="imgloading-container">
+        <span class="lazyload" data-bg="{% static 'wp-content/uploads/2023/10/logo.png' %}" style="background-image: url('../static/wp-content/uploads/2023/10/logo.png');"></span>
+      </div><img decoding="async" width="479" height="70" data-no-lazy="1" class="skip-lazy" alt="loader image" src="{% static 'wp-content/uploads/2023/10/logo.png' %}" />
+    </div>
+  </div>
+  <div class="loader-close-button" style="display: none;">
+    <span class="screen-reader-text">Close</span>
+  </div>
+</div>
